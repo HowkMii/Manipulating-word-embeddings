@@ -124,3 +124,6 @@ def find_closest_word(v, k = 1):
     embedding.head(10)
 
     find_closest_word(country)
+
+
+    find_closest_word(vec('Italy') - vec('Rome') + vec('Madrid'))
