@@ -100,3 +100,24 @@ print(country[0:5]) # Print the first 5 values of the vector
 
 diff = country - vec('Spain')
 print(diff[0:10])
+
+
+
+
+keys = word_embeddings.keys()
+data = []
+for key in keys:
+    data.append(word_embeddings[key])
+
+embedding = pd.DataFrame(data=data, index=keys)
+# Define a function to find the closest word to a vector:
+def find_closest_word(v, k = 1):
+    # Calculate the vector difference from each word to the input vector
+    diff = embedding.values - v 
+    # Get the norm of each difference vector. 
+    # It means the squared euclidean distance from each word to the input vector
+    delta = np.sum(diff * diff, axis=1)
+    # Find the index of the minimun distance in the array
+    i = np.argmin(delta)
+    # Return the row name for this item
+    return embedding.iloc[i].name
