@@ -122,3 +122,5 @@ def find_closest_word(v, k = 1):
     # Return the row name for this item
     return embedding.iloc[i].name
     embedding.head(10)
+
+    find_closest_word(country)
