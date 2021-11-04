@@ -123,7 +123,10 @@ def find_closest_word(v, k = 1):
     return embedding.iloc[i].name
     embedding.head(10)
 
-    find_closest_word(country)
+
+find_closest_word(country)
 
 
-    find_closest_word(vec('Italy') - vec('Rome') + vec('Madrid'))
+find_closest_word(vec('Italy') - vec('Rome') + vec('Madrid'))
+print(find_closest_word(vec('Berlin') + capital))
+print(find_closest_word(vec('Beijing') + capital))
