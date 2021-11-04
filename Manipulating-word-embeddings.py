@@ -138,3 +138,6 @@ doc = "Spain petroleum city king"
 vdoc = [vec(x) for x in doc.split(" ")]
 doc2vec = np.sum(vdoc, axis = 0)
 doc2vec
+
+
+find_closest_word(doc2vec)
