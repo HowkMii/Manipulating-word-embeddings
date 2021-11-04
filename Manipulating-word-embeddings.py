@@ -89,3 +89,10 @@ plt.show()
 
 print(np.linalg.norm(vec('town'))) # Print the norm of the word town
 print(np.linalg.norm(vec('sad'))) # Print the norm of the word sad
+
+
+
+capital = vec('France') - vec('Paris')
+country = vec('Madrid') + capital
+
+print(country[0:5]) # Print the first 5 values of the vector
