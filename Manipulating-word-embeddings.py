@@ -131,3 +131,10 @@ find_closest_word(vec('Italy') - vec('Rome') + vec('Madrid'))
 print(find_closest_word(vec('Berlin') + capital))
 print(find_closest_word(vec('Beijing') + capital))
 print(find_closest_word(vec('Lisbon') + capital))
+
+
+
+doc = "Spain petroleum city king"
+vdoc = [vec(x) for x in doc.split(" ")]
+doc2vec = np.sum(vdoc, axis = 0)
+doc2vec
