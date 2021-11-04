@@ -96,3 +96,7 @@ capital = vec('France') - vec('Paris')
 country = vec('Madrid') + capital
 
 print(country[0:5]) # Print the first 5 values of the vector
+
+
+diff = country - vec('Spain')
+print(diff[0:10])
