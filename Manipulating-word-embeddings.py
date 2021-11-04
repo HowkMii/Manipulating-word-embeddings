@@ -82,3 +82,10 @@ for i in range(0, len(words)):
 
 
 plt.show()
+
+
+
+
+
+print(np.linalg.norm(vec('town'))) # Print the norm of the word town
+print(np.linalg.norm(vec('sad'))) # Print the norm of the word sad
