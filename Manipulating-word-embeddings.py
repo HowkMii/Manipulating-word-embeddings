@@ -12,3 +12,8 @@ len(word_embeddings) # there should be 243 words that will be used in this assig
 countryVector = word_embeddings['country'] # Get the vector representation for the word 'country'
 print(type(countryVector)) # Print the type of the vector. Note it is a numpy array
 print(countryVector)
+
+
+#Get the vector for a given word:
+def vec(w):
+    return word_embeddings[w]
